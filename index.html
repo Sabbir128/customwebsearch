@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Search Engine</title>
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfsbwiJGdroA-2JtM3COk3gWe27zXpIOjMvd0qYgKyELwr9EpdFseN_cE4B7BJi-jt6wxB_dDUjX1r9uJ3D4qkbT4jCUmHr3W-OOORxYBOSN05fuykcNwOqZ4ZD6M9ohB-bY3iybHx_T-SiglN_tsqiJmAYzeZX5gSL8zEhQIPTP2HsR1UHs4SJJPxbuW2/s1920/1000003923.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Header styling */
+        .header {
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Search box section */
+        .search-container {
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gcse-search {
+            margin: 20px auto;
+        }
+
+        /* Popular site icons section */
+        .popular-sites {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .site-icon {
+            text-align: center;
+            width: 120px;
+        }
+
+        .site-icon img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .site-icon img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .site-icon a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .site-icon a:hover {
+            color: #FFD700; /* Golden color on hover */
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #cccccc;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">Welcome to My Custom Search Page</div>
+
+    <!-- Search Engine Section -->
+    <div class="search-container">
+        <!-- Google Custom Search Engine -->
+        <script async src="https://cse.google.com/cse.js?cx=a50e09e3d607c4a5f"></script>
+        <div class="gcse-search"></div>
+    </div>
+
+    <!-- Popular Sites Section -->
+    <div class="popular-sites">
+        <!-- Facebook -->
+        <div class="site-icon">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                Facebook
+            </a>
+        </div>
+        <!-- YouTube -->
+        <div class="site-icon">
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+                YouTube
+            </a>
+        </div>
+        <!-- Twitter -->
+        <div class="site-icon">
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
+                Twitter
+            </a>
+        </div>
+        <!-- Instagram -->
+        <div class="site-icon">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                Instagram
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2025 My Custom Search Page. All rights reserved.
+    </div>
+</body>
+</html>
